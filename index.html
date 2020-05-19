@@ -51,7 +51,6 @@ input{
     const suffix=this.dataset.sizing ||''
     // reset property value in :root{} 
     document.documentElement.style.setProperty(`--${this.name}`,this.value+suffix)
-    console.log(`--${this.name}`)
     }
     inputs.forEach(input=>input.addEventListener('change',updateIt))
     inputs.forEach(input=>input.addEventListener('mousemove',updateIt))
